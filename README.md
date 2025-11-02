@@ -23,7 +23,8 @@ It’s trained on a **Goodreads-style dataset** and features an **interactive da
 ---
 
 ## 🧩 Project Workflow (Step-by-Step)
-
+## Model Flow
+![Model Flowchart](https://github.com/Harshitamahant/Machine-Learning-Theory/blob/main/Flowchart.jpg)
 ### 🏁 Step 0: Install & Import Libraries
 All required libraries are installed and imported:
 ```python
@@ -44,7 +45,6 @@ Shape: (10000, 5)
 ```
 
 ---
-
 ### 🧹 Step 2: Extract Primary Genre
 Extracts the first genre from a list or comma-separated text.  
 Keeps **Top 10 Genres**, assigns others as “Other”.
