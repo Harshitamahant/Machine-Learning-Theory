@@ -8,6 +8,25 @@ This project classifies **book descriptions into genres** such as **Fiction**, *
 It’s trained on a **Goodreads-style dataset** and features an **interactive dashboard** built using **ipywidgets** in Jupyter/Colab.
 
 ---
+## 🧠 Abstract
+
+The growing volume of digital book content on platforms such as Goodreads and Kindle necessitates efficient classification systems for organizing and recommending literature. This project presents a machine learning–based approach to automatically classify books into genres using textual descriptions. The dataset, containing thousands of book summaries, was preprocessed through tokenization, lemmatization, and stopword removal before feature extraction using TF-IDF vectorization. Three machine learning models—Logistic Regression, Naive Bayes, and Random Forest—were evaluated for performance. Logistic Regression achieved the highest accuracy of 46.85% and an F1-score of 0.4156, outperforming the other models in balancing precision and recall. The system also suggests similar books based on cosine similarity between TF-IDF vectors, providing an intelligent recommendation mechanism. The study demonstrates how NLP and traditional ML can be integrated effectively for genre prediction and content-based book recommendation.
+
+---
+
+### 🔑 Keywords
+Natural Language Processing (NLP), Book Classification, Machine Learning, TF-IDF, Logistic Regression, Recommendation System
+
+---
+
+## 🧩 Project Overview
+
+This project focuses on classifying book descriptions into genres such as **Fiction, Fantasy, Non-Fiction, Romance, Mystery, and more** using **Natural Language Processing (NLP)** and **Machine Learning** models.  
+It is trained on a Goodreads-style dataset and features an **interactive dashboard** built using `ipywidgets` in Jupyter/Colab for live predictions.
+
+The model predicts genres based on the text description of a book and also recommends **similar books** using cosine similarity on TF-IDF vectors.
+
+---
 
 ## 🔧 Tech Stack
 
@@ -18,7 +37,7 @@ It’s trained on a **Goodreads-style dataset** and features an **interactive da
 | **Models** | Logistic Regression, Random Forest, Naive Bayes |
 | **Features** | TF-IDF (bigrams) |
 | **Visualization** | Matplotlib, WordCloud, ipywidgets |
-| **Notebook** | Google Colab |
+| **Notebook Environment** | Google Colab |
 
 ---
 
@@ -213,6 +232,20 @@ Outputs:
 | 10 | Dashboard | Real-Time Predictions |
 
 ---
+## 🧩 Conclusion
+
+This project successfully demonstrates the application of Natural Language Processing (NLP) and machine learning for automated book genre classification and recommendation. By leveraging textual descriptions from Goodreads, the study applies TF-IDF vectorization to convert text into numerical representations suitable for model training. Among the three models evaluated—Naive Bayes, Random Forest, and Logistic Regression—the Logistic Regression model delivered the best overall performance with an accuracy of 46.85% and a weighted F1-score of 0.4156. The results suggest that linear models are well-suited for sparse textual features such as TF-IDF vectors. The inclusion of cosine similarity for generating similar book recommendations adds a practical recommendation layer to the system. Future work will explore the use of transformer-based models like BERT or DistilBERT to capture deeper contextual semantics, and integration with real-world book APIs for scalable deployment.
+
+---
+
+## 📚 References
+
+[1] S. Bird, E. Klein, and E. Loper, *Natural Language Processing with Python*, O’Reilly Media, 2009.  
+[2] F. Pedregosa *et al.*, “Scikit-learn: Machine Learning in Python,” *Journal of Machine Learning Research*, vol. 12, pp. 2825–2830, 2011.  
+[3] T. Mikolov, K. Chen, G. Corrado, and J. Dean, “Efficient Estimation of Word Representations in Vector Space,” *arXiv preprint arXiv:1301.3781*, 2013.  
+[4] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,” *arXiv preprint arXiv:1810.04805*, 2018.  
+[5] Goodreads Dataset, *Goodreads.com*, Accessed 2025.  
+[6] H. Mahant, “Book Genre Classification using NLP and Machine Learning,” *GitHub Repository*, 2025. Available: [https://github.com/Harshitamahant](https://github.com/Harshitamahant)
 
 ## 🧩 Repository Structure
 
@@ -238,8 +271,6 @@ Outputs:
  ├── README.md
  └── requirements.txt
 ```
-
----
 
 ## 🧾 Citation
 If you use this project, please cite:
